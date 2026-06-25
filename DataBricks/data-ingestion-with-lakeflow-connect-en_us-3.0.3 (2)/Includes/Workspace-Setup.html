@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>var tableOfContentsCell = {"version":"CommandV1","origId":0,"guid":"aa474a42-c877-4ab6-b0b1-2dc8f01d2320","subtype":"command","commandType":"auto","position":0.0,"command":"%md [&lsaquo; Back to Table of Contents](../index.html)","commandVersion":1,"state":"finished","results":null,"resultDbfsStatus":null,"resultDbfsErrorMessage":null,"errorSummary":null,"errorTraceType":null,"error":null,"errorDetails":null,"baseErrorDetails":null,"workflows":[],"startTime":0,"submitTime":0,"finishTime":0,"collapsed":false,"bindings":{},"inputWidgets":{},"displayType":"table","width":"auto","height":"auto","xColumns":null,"yColumns":null,"pivotColumns":null,"pivotAggregation":null,"useConsistentColors":false,"customPlotOptions":{},"commentThread":[],"commentsVisible":false,"parentHierarchy":[],"diffInserts":[],"diffDeletes":[],"globalVars":{},"latestUser":"","latestUserId":null,"latestAssumeRoleInfo":null,"commandTitle":"","showCommandTitle":false,"hideCommandCode":false,"hideCommandResult":false,"isLockedInExamMode":false,"iPythonMetadata":null,"metadata":{},"streamStates":{},"datasetPreviewNameToCmdIdMap":{},"tableResultIndex":null,"listResultMetadata":[],"subcommandOptions":null,"contentSha256Hex":null,"tableResultSettingsMap":{}};</script>
+<meta name="databricks-html-version" content="1">
+<title>Includes / Workspace-Setup - Databricks</title>
+
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta name="robots" content="nofollow, noindex">
+<meta http-equiv="Content-Language" content="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+
+<link rel="stylesheet" type="text/css" href="https://databricks-prod-cloudfront.cloud.databricks.com/static/monolith-ui_2026-06-22_09.13.10Z_master_69d26081_1569059032/css/notebook-main.css">
+<link rel="icon" type="image/png" href="https://databricks-prod-cloudfront.cloud.databricks.com/static/monolith-ui_2026-06-22_09.13.10Z_master_69d26081_1569059032/login/favicon.ico"/>
+<script>window.__STATIC_SETTINGS__ = {"sandboxForSandboxFrame":"allow-scripts allow-popups allow-popups-to-escape-sandbox allow-forms allow-same-origin allow-downloads","databricks.fe.deploymentMode":"production","deploymentMode":"production","staticNotebookResourceUrl_new":"https://databricks-prod-cloudfront.cloud.databricks.com/static/monolith-ui_2026-06-22_09.13.10Z_master_69d26081_1569059032/","databricks.fe.eda.sandboxForSandboxFrame":"allow-scripts allow-popups allow-popups-to-escape-sandbox allow-forms allow-same-origin allow-downloads","enableResultsDownloading":true,"disableExportNotebook":false,"enableNotebookTableClipboard":true,"enableExportNotebook":true,"staticNotebookResourceUrl":"https://databricks-prod-cloudfront.cloud.databricks.com/static/monolith-ui_2026-06-22_09.13.10Z_master_69d26081_1569059032/","disableResultsDownloading":true};</script>
+<script>var __DATABRICKS_NOTEBOOK_MODEL = 'JTdCJTIydmVyc2lvbiUyMiUzQSUyMk5vdGVib29rVjElMjIlMkMlMjJvcmlnSWQlMjIlM0ExOTYwODk0NDc2NDA1MzE2JTJDJTIybmFtZSUyMiUzQSUyMkluY2x1ZGVzJTIwJTJGJTIwV29ya3NwYWNlLVNldHVwJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJweXRob24lMjIlMkMlMjJjb21tYW5kcyUyMiUzQSU1QiU1RCUyQyUyMmRhc2hib2FyZHMlMjIlM0ElNUIlNUQlMkMlMjJndWlkJTIyJTNBJTIyNDY1ZDc1YzUtNDBhMC00MWJjLWI3NjktNWQ1MjliZDRiMjU4JTIyJTJDJTIyZ2xvYmFsVmFycyUyMiUzQSU3QiU3RCUyQyUyMmlQeXRob25NZXRhZGF0YSUyMiUzQSU3QiUyMm5iZm9ybWF0JTIyJTNBNCUyQyUyMklQeXRob25NZXRhZGF0YSUyMiUzQSU3QiUyMmxhbmd1YWdlX2luZm8lMjIlM0ElN0IlMjJuYW1lJTIyJTNBJTIycHl0aG9uJTIyJTdEJTJDJTIya2VybmVsc3BlYyUyMiUzQSU3QiUyMmRpc3BsYXlfbmFtZSUyMiUzQSUyMlB5dGhvbiUyMDMlMjIlMkMlMjJsYW5ndWFnZSUyMiUzQSUyMnB5dGhvbiUyMiUyQyUyMm5hbWUlMjIlM0ElMjJweXRob24zJTIyJTdEJTdEJTdEJTJDJTIyaW5wdXRXaWRnZXRzJTIyJTNBJTdCJTdEJTJDJTIybm90ZWJvb2tNZXRhZGF0YSUyMiUzQSU3QiU3RCUyQyUyMnJlcG9zRXhwb3J0Rm9ybWF0JTIyJTNBJTIySlVQWVRFUiUyMiUyQyUyMmVudmlyb25tZW50TWV0YWRhdGElMjIlM0ElN0IlMjJjbGllbnQlMjIlM0ElMjI1JTIyJTdEJTJDJTIyY29tcHV0ZVByZWZlcmVuY2VzJTIyJTNBbnVsbCUyQyUyMmlucHV0V2lkZ2V0UHJlZmVyZW5jZXMlMjIlM0FudWxsJTJDJTIyZW52aXJvbm1lbnRTZXJpYWxpemF0aW9uUHJlZmVyZW5jZXMlMjIlM0FudWxsJTdE';</script>
+
+</head>
+<body>  <script>
+window.addEventListener('load', function(event) {
+  if (window.mainJsLoadError) {
+    var u = 'https://databricks-prod-cloudfront.cloud.databricks.com/static/monolith-ui_2026-06-22_09.13.10Z_master_69d26081_1569059032/js/notebook-main.js';
+    var b = document.getElementsByTagName('body')[0];
+    var c = document.createElement('div');
+    c.innerHTML = ('<h1 class="error-static-notebook">Network Error</h1>' +
+      '<p><b>Please check your network connection and try again.</b></p>' +
+      '<p>Could not load a required resource: ' + u + '</p>');
+    c.style.margin = '30px';
+    c.style.padding = '20px 50px';
+    c.style.backgroundColor = '#f5f5f5';
+    c.style.borderRadius = '5px';
+    b.appendChild(c);
+  }
+});
+</script>
+<script
+ src="https://databricks-prod-cloudfront.cloud.databricks.com/static/monolith-ui_2026-06-22_09.13.10Z_master_69d26081_1569059032/js/notebook-main.js"
+ onerror="window.mainJsLoadError = true;"
+ charset="utf-8"></script>
+<script
+ src="https://databricks-prod-cloudfront.cloud.databricks.com/static/monolith-ui_2026-06-22_09.13.10Z_master_69d26081_1569059032/js/metrics-graphics.js"
+ onerror="window.mainJsLoadError = true;"
+ charset="utf-8"></script>
+</body>
+</html>

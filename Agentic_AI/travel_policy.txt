@@ -1,0 +1,49 @@
+# Voyage Travel & Refund Policy
+**Effective Date:** January 1, 2024
+**Document ID:** VOY-POL-2024-CR
+
+## 1. Introduction
+At Voyage, we strive to make travel seamless. This policy outlines the terms regarding cancellations, refunds, and modifications for all services. By booking with us, you agree to these terms.
+
+## 2. Flight Booking Tiers
+Your refund eligibility depends strictly on the fare tier selected.
+
+### 2.1 Saver Fares (Economy Light)
+* **Refund Status:** Non-refundable.
+* **Changes:** Not permitted.
+* **Exceptions:** If the airline cancels the flight, a full refund will be issued.
+* **Note:** Saver fares do not include checked baggage.
+
+### 2.2 Standard Fares (Main Cabin)
+* **Cancellation Window:**
+    * **More than 48 hours before departure:** 100% refundable to original payment method.
+    * **Within 48 hours of departure:** 50% cancellation fee applies. The remaining 50% is issued as Voyage Credits.
+    * **Within 4 hours of departure:** Non-refundable.
+* **Changes:** One date change is permitted per booking, subject to fare difference.
+
+### 2.3 Premium Fares (Business/First)
+* **Refund Status:** Fully refundable up to 2 hours before departure.
+* **No-Show Policy:** If you fail to check in, the ticket value is converted to Voyage Credits valid for 1 year.
+
+## 3. Legacy Policy (Pre-2024)
+*Note: This section is for historical reference and applies only to bookings made before Jan 1, 2024.*
+* **All Tiers:** Previously, all tickets were 100% refundable if cancelled within 24 hours of booking, regardless of departure time. This has been superseded by the 2024 tiers.
+* **Work from Home:** Employees were previously required to be in the office 5 days a week. As of 2024, we are Remote-First.
+
+## 4. Refund Processing Times
+* **Voyage Credits:** Instant.
+* **Credit/Debit Card:** 5-7 business days.
+* **PayPal:** 24-48 hours.
+
+## 5. Exceptional Circumstances
+Voyage may waive fees for "Force Majeure" events (e.g., severe weather grounding flights, death of immediate family). Documentation is required within 14 days. Minor illnesses without hospitalization do not qualify.
+
+## 6. Baggage Fees
+* **Economy:** $50 per checked bag.
+* **Business:** 2 bags included.
+* **Special Items:** Surfboards and Skis incur a non-refundable $75 fee per leg.
+
+## 7. Contact Support
+* **Urgent:** Call +1-800-VOYAGE-NOW.
+* **General:** Use the "My Trips" tab in the app.
+* **Escalations:** Email refunds@voyage.com. Do not contact the CEO directly.

@@ -1,0 +1,105 @@
+CREATE TABLE `us_data`.state_population (
+state string, 
+year int, 
+population bigint)
+PARTITIONED BY (year)
+TBLPROPERTIES ('table_type' = 'iceberg')
+
+
+INSERT INTO us_data.state_population
+VALUES
+('Alabama', 2020, 5032962),
+('Alabama', 2021, 5050058),
+('Alabama', 2022, 5076868),
+('Alabama', 2023, 5117850),
+('Alabama', 2024, 5163055),
+
+('Alaska',  2020,  732906),
+('Alaska',  2021,  734590),
+('Alaska',  2022,  733659),
+('Alaska',  2023,  734654),
+('Alaska',  2024,  736537);
+
+
+SELECT
+  state,
+  COUNT(*)        AS years_of_data,
+  MIN(population) AS min_population,
+  MAX(population) AS max_population,
+  AVG(population) AS avg_population
+FROM us_data.state_population
+GROUP BY state
+ORDER BY avg_population DESC;
+
+
+
+
+
+
+
+Alina Clark and Jin Shao
+Hi Alina/Jin, 
+
+I got your contact information from Jessenia. This is Milind Chokshi. I have applied for the mentioned position Data Engineer, Lead , R0231790. I would love to understand job in detail and explain my experiences that will be helpful for the requirement.  Let me know if you have few minutes to connect, if possible.
+
+
+
+
+
+--Use the following statement to create a table in your S3 Table bucket.
+CREATE TABLE `us_data`.daily_sales (
+sale_date date, 
+product_category string, 
+sales_amount double)
+PARTITIONED BY (month(sale_date))
+TBLPROPERTIES ('table_type' = 'iceberg')
+
+/*
+Next steps 1) Use the following SQL statement to insert data to your table.
+INSERT INTO daily_sales
+VALUES
+(DATE '2024-01-15', 'Laptop', 900.00),
+(DATE '2024-01-15', 'Monitor', 250.00),
+(DATE '2024-01-16', 'Laptop', 1350.00),
+(DATE '2024-02-01', 'Monitor', 300.00),
+(DATE '2024-02-01', 'Keyboard', 60.00),
+(DATE '2024-02-02', 'Mouse', 25.00),
+(DATE '2024-02-02', 'Laptop', 1050.00),
+(DATE '2024-02-03', 'Laptop', 1200.00),
+(DATE '2024-02-03', 'Monitor', 375.00);
+
+2) Use the following SQL statement to run a sample analytics query.
+SELECT 
+product_category,
+COUNT(*) as units_sold,
+SUM(sales_amount) as total_revenue,
+AVG(sales_amount) as average_price
+FROM daily_sales
+WHERE sale_date BETWEEN DATE '2024-02-01' and DATE '2024-02-29'
+GROUP BY product_category
+ORDER BY total_revenue DESC;
+*/
+
+
+
+
+
+
+
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Statement1",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": [
+        "s3:GetObject",
+        "s3:ListBucket"
+      ],
+      "Resource": "arn:aws:s3:::mybucket-michokshi"
+    }
+  ]
+
+
